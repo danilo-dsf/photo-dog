@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export function DogCard({ dog, size }: DogCardProps) {
+export const DogCard = ({ dog, size }: DogCardProps) => {
   return (
     <TouchableOpacity style={styles.dogCard}>
       <Image
@@ -28,4 +28,4 @@ export function DogCard({ dog, size }: DogCardProps) {
       />
     </TouchableOpacity>
   );
-}
+};

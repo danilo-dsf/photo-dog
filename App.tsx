@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ActivityIndicator,
   StyleSheet,
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function App() {
+const App: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [dogs, setDogs] = useState<DogsService.Dog[]>([]);
 
@@ -64,4 +64,6 @@ export default function App() {
       />
     </SafeAreaView>
   );
-}
+};
+
+export default App;
