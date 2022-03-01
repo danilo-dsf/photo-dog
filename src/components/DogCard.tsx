@@ -1,6 +1,6 @@
 import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-import { Dog } from '../../services/DogsService';
+import { Dog } from '../services/DogsService';
 
 interface DogCardProps {
   dog: Dog;

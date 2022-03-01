@@ -8,7 +8,7 @@ import {
   useWindowDimensions,
   Text,
 } from 'react-native';
-import { DogCard } from './src/components/DogCard/DogCard';
+import { DogCard } from './src/components/DogCard';
 
 import * as DogsService from './src/services/DogsService';
 
