@@ -8,7 +8,7 @@ export interface Dog {
 }
 
 export async function getRandomDogs(): Promise<Dog[]> {
-  const response = await api.get('breeds/image/random/50');
+  const response = await api.get('breeds/image/random/40');
 
   const dogs: Dog[] = response.data.message?.map((url: string) => ({
     id: uuid.v4(),
