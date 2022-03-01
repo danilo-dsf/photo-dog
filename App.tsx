@@ -5,9 +5,10 @@ import {
   StyleSheet,
   SafeAreaView,
   FlatList,
-  Image,
   useWindowDimensions,
+  Text,
 } from 'react-native';
+import { DogCard } from './src/components/DogCard/DogCard';
 
 import * as DogsService from './src/services/DogsService';
 
@@ -17,10 +18,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  image: {
-    width: '25%',
-    height: 128,
   },
 });
 
@@ -49,6 +46,7 @@ export default function App() {
     return (
       <SafeAreaView style={styles.container}>
         <ActivityIndicator color="#000" size={32} />
+        <Text>Carregando...</Text>
       </SafeAreaView>
     );
   }
@@ -59,10 +57,7 @@ export default function App() {
       <FlatList
         data={dogs}
         renderItem={({ item }) => (
-          <Image
-            source={{ uri: item.uri }}
-            style={{ width: widthQuarter, height: widthQuarter }}
-          />
+          <DogCard dog={item} size={widthQuarter - 8} />
         )}
         keyExtractor={({ id }) => id}
         numColumns={4}
