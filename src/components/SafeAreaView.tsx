@@ -11,6 +11,7 @@ interface SafeAreaViewProps extends ViewProps {
 const styles = StyleSheet.create({
   android: {
     flex: 1,
+    paddingTop: RFValue(16),
   },
   ios: {
     flex: 1,
