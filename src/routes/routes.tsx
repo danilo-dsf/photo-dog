@@ -8,15 +8,9 @@ const Stack = createNativeStackNavigator<AppRoutesParams>();
 
 export const Routes: React.FC = () => {
   return (
-    <Stack.Navigator
-      initialRouteName="HomeScreen"
-      screenOptions={{ headerShown: false }}
-    >
+    <Stack.Navigator initialRouteName="HomeScreen" screenOptions={{ headerShown: false }}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
-      <Stack.Screen
-        name="DogPhotoDetailsScreen"
-        component={DogPhotoDetailsScreen}
-      />
+      <Stack.Screen name="DogPhotoDetailsScreen" component={DogPhotoDetailsScreen} />
     </Stack.Navigator>
   );
 };

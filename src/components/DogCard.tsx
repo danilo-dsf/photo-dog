@@ -22,10 +22,7 @@ const styles = StyleSheet.create({
 export const DogCard = ({ dog, size }: DogCardProps) => {
   return (
     <TouchableOpacity style={styles.dogCard}>
-      <Image
-        source={{ uri: dog.uri }}
-        style={{ width: size, height: size, borderRadius: 8 }}
-      />
+      <Image source={{ uri: dog.uri }} style={{ width: size, height: size, borderRadius: 8 }} />
     </TouchableOpacity>
   );
 };

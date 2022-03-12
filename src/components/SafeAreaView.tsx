@@ -25,10 +25,7 @@ export const SafeAreaView: React.FC<SafeAreaViewProps> = ({
 }) => {
   if (Platform.OS === 'android') {
     return (
-      <RNSACSafeAreaView
-        {...rest}
-        style={{ ...styles.android, backgroundColor }}
-      >
+      <RNSACSafeAreaView {...rest} style={{ ...styles.android, backgroundColor }}>
         {children}
       </RNSACSafeAreaView>
     );

@@ -8,10 +8,7 @@ export type AppRoutesParams = {
   };
 };
 
-export type HomeScreenRouteProps = NativeStackScreenProps<
-  AppRoutesParams,
-  'HomeScreen'
->;
+export type HomeScreenRouteProps = NativeStackScreenProps<AppRoutesParams, 'HomeScreen'>;
 
 export type DogPhotoDetailsScreenRouteProps = NativeStackScreenProps<
   AppRoutesParams,

@@ -9,15 +9,13 @@ interface FileInfo {
   fileName: string;
 }
 
-export const DogPhotoDetailsScreen: React.FC<
-  DogPhotoDetailsScreenRouteProps
-> = ({ route }) => {
+export const DogPhotoDetailsScreen: React.FC<DogPhotoDetailsScreenRouteProps> = ({ route }) => {
   const [fileInfo, setFileInfo] = useState<FileInfo>({} as FileInfo);
 
   useEffect(() => {
     const splitUrl = route.params.dog.uri.split('/');
 
-    const breedsLabelIndex = splitUrl.findIndex(text => text === 'breeds');
+    const breedsLabelIndex = splitUrl.findIndex((text) => text === 'breeds');
 
     const breed = splitUrl[breedsLabelIndex + 1];
     const fileName = splitUrl[splitUrl.length - 1];

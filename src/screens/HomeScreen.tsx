@@ -29,7 +29,7 @@ export const HomeScreen: React.FC<HomeScreenRouteProps> = ({ navigation }) => {
 
       <FlatList
         data={dogs}
-        keyExtractor={item => item.id}
+        keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <DogImage dog={item} onPress={() => handleOpenDogDetails(item)} />
         )}

@@ -24,10 +24,7 @@ const styles = StyleSheet.create({
 export const AppHeader: React.FC<AppHeaderProps> = ({ logoStyle = 'dark' }) => {
   return (
     <View style={styles.container}>
-      <Image
-        source={logoStyle === 'dark' ? LogoDark : LogoLight}
-        style={styles.logo}
-      />
+      <Image source={logoStyle === 'dark' ? LogoDark : LogoLight} style={styles.logo} />
     </View>
   );
 };
