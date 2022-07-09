@@ -1,12 +1,8 @@
-<center>
+<h1 align="center">
   <img src="https://imgur.com/yXJlQyb.png" />
-</center>
+</h1>
 
-<hr>
-
-<center>
-  <h1>PhotoDog</h1>
-</center>
+<h1 align="center">PhotoDog</h1>
 
 <p>
   O PhotoDog é um aplicativo simples desenvolvido com JavaScript utilizando a tecnologia React Native juntamente com Typescript apenas com a finalidade de treinamento de habilidades de desenvolvimento frontend.
@@ -22,10 +18,11 @@
   <img src="https://imgur.com/SBXACuG.png" />
 </center>
 
-<hr>
+<br>
 <br>
 
-<h1>Espero que goste do projeto!</h1>
-<h2>Estou aberto para sugestões de melhorias e pull requests.</h2>
+<h3>Espero que goste do projeto!</h3><br>
 
-<h3>Obrigado por visitar esse projeto!</h3>
+<p>Estou aberto para sugestões de melhorias e pull requests.</p><br>
+
+<p>Obrigado por visitar esse projeto!</p>
