@@ -81,9 +81,7 @@ export const HomeScreen: React.FC<HomeScreenRouteProps> = ({ navigation }) => {
       <FlatList
         data={dogs}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <DogImage dog={item} onPress={() => handleOpenDogDetails(item)} />
-        )}
+        renderItem={({ item }) => <DogImage dog={item} onPress={() => handleOpenDogDetails(item)} />}
         numColumns={4}
         ListFooterComponent={() => renderListFooterComponent(isLoading)}
         onEndReached={handleLoadMoreItems}

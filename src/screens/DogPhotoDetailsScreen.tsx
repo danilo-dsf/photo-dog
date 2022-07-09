@@ -12,10 +12,7 @@ interface FileInfo {
   url: string;
 }
 
-export const DogPhotoDetailsScreen: React.FC<DogPhotoDetailsScreenRouteProps> = ({
-  route,
-  navigation,
-}) => {
+export const DogPhotoDetailsScreen: React.FC<DogPhotoDetailsScreenRouteProps> = ({ route, navigation }) => {
   const [fileInfo, setFileInfo] = useState<FileInfo>({} as FileInfo);
 
   const handleGoBack = () => {
@@ -54,18 +51,14 @@ export const DogPhotoDetailsScreen: React.FC<DogPhotoDetailsScreenRouteProps> = 
         <View style={{ flex: 1, justifyContent: 'flex-end', paddingVertical: RFValue(32) }}>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Text style={{ marginRight: RFValue(8), fontSize: RFValue(16) }}>Breed:</Text>
-            <Text
-              style={{ fontSize: RFValue(16), fontWeight: 'bold', textTransform: 'capitalize' }}
-            >
+            <Text style={{ fontSize: RFValue(16), fontWeight: 'bold', textTransform: 'capitalize' }}>
               {fileInfo.breed}
             </Text>
           </View>
 
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Text style={{ marginRight: RFValue(8), fontSize: RFValue(16) }}>File name:</Text>
-            <Text
-              style={{ fontSize: RFValue(16), fontWeight: 'bold', textTransform: 'capitalize' }}
-            >
+            <Text style={{ fontSize: RFValue(16), fontWeight: 'bold', textTransform: 'capitalize' }}>
               {fileInfo.fileName}
             </Text>
           </View>

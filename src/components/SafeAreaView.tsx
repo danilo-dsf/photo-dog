@@ -19,11 +19,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const SafeAreaView: React.FC<SafeAreaViewProps> = ({
-  children,
-  backgroundColor = '#f4d35e',
-  ...rest
-}) => {
+export const SafeAreaView: React.FC<SafeAreaViewProps> = ({ children, backgroundColor = '#f4d35e', ...rest }) => {
   if (Platform.OS === 'android') {
     return (
       <RNSACSafeAreaView {...rest} style={{ ...styles.android, backgroundColor }}>
