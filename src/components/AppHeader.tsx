@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
-import { RFPercentage } from 'react-native-responsive-fontsize';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import LogoDark from '../assets/logo-dark.png';
 import LogoLight from '../assets/logo-light.png';
 
@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     height: RFPercentage(10),
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: RFValue(16),
   },
   logo: {
     flex: 1,

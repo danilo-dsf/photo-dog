@@ -44,17 +44,31 @@ export const DogPhotoDetailsScreen: React.FC<DogPhotoDetailsScreenRouteProps> = 
           style={{
             width: '100%',
             height: RFPercentage(40),
-            borderRadius: RFValue(4),
+            borderRadius: RFValue(16),
+            borderColor: '#f39c12',
+            borderWidth: RFValue(8),
             resizeMode: 'cover',
           }}
         />
 
         <View style={{ flex: 1, justifyContent: 'flex-end', paddingVertical: RFValue(32) }}>
-          <Text>Breed:</Text>
-          <Text>{fileInfo.breed}</Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <Text style={{ marginRight: RFValue(8), fontSize: RFValue(16) }}>Breed:</Text>
+            <Text
+              style={{ fontSize: RFValue(16), fontWeight: 'bold', textTransform: 'capitalize' }}
+            >
+              {fileInfo.breed}
+            </Text>
+          </View>
 
-          <Text>File name:</Text>
-          <Text>{fileInfo.fileName}</Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <Text style={{ marginRight: RFValue(8), fontSize: RFValue(16) }}>File name:</Text>
+            <Text
+              style={{ fontSize: RFValue(16), fontWeight: 'bold', textTransform: 'capitalize' }}
+            >
+              {fileInfo.fileName}
+            </Text>
+          </View>
 
           <TouchableOpacity
             onPress={handleGoBack}
