@@ -15,7 +15,7 @@
 <hr>
 
 <center>
-  <img src="https://imgur.com/SBXACuG.png" />
+  <img src="https://imgur.com/r5xw5gR.png" />
 </center>
 
 <br>
